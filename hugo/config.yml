@@ -1,0 +1,17 @@
+---
+# Site
+baseurl: "/"
+title: "Hugo Boilerplate"
+enableRobotsTXT: true
+googleAnalytics: ""
+# Content
+languageCode: "en-au"
+defaultContentLanguage: "en"
+# Formats
+metaDataFormat: "yaml"
+# -----------------------------
+# DO NOT CHANGE BELOW THIS LINE
+# -----------------------------
+disableLiveReload: true
+watch: false
+---

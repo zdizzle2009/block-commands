@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ .Site.LanguageCode }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Description }}">{{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
+  <title>
+    {{ $title }}
+  </title>
+  {{ .Hugo.Generator }}
+  <meta name="application-name" content="{{ $title }}">
+  <meta name="theme-color" content="#2271ff"> {{ if .RSSLink }}
+  <link rel="manifest" href="{{ "/manifest.json" | relURL }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
+  <link rel="alternate" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ $title }}" />
+  <link rel="feed" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ $title }}" /> {{ end }}
+  <script defer src="{{ "/js/main.bundle.js" | relURL }}"></script>
+</head>
+
+<body>
+{{ block "header" . }}{{ partial "header" . }}{{end}}
+<main>
+{{ block "main" . }}{{end}}
+</main>
+{{ block "footer" . }}{{ partial "footer" . }}{{end}}
+</body>
+
+</html>
