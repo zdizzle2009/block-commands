@@ -2,7 +2,7 @@
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lukebennett88/hugo-starter)
 
-Based on [Blaupause](https://github.com/fspoettel/blaupause)
+Based on the excellent [Blaupause](https://github.com/fspoettel/blaupause) boilerplate.
 
 ## Installation
 
