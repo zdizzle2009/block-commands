@@ -8,4 +8,4 @@ draft: false
 
 _yay!_
 
-[back to first page](/first-post)
+[back to first page](/posts/first-post)

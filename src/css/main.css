@@ -20,12 +20,33 @@ header {
   flex-shrink: 0;
 }
 
+@supports (padding: max(0px)) {
+  header {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+}
+
 main {
   flex: 1 0 auto;
+}
+
+@supports (padding: max(0px)) {
+  main {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
 }
 
 footer {
   background-color: var(--color-text);
   color: var(--color-background);
   flex-shrink: 0;
+}
+
+@supports (padding: max(0px)) {
+  footer {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
 }

@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html class="no-js" lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.LanguageCode }}">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ .Description }}">{{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
   <title>
-    {{ $title }}
-  </title>
+    {{ block "title" . }}{{- with .Title }}{{ . }} &middot; {{ end }}{{ .Site.Title -}}{{ end }}
+  </title>{{ with .Description }}
+  <meta name="description" content="{{ . }}">{{ end }}
+  <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+  <meta name="msapplication-TileColor" content="#222222">
+  <meta name="theme-color" content="#ffffff">
   {{ .Hugo.Generator }}
-  <meta name="application-name" content="{{ $title }}">
-  <meta name="theme-color" content="#2271ff">
-  <link rel="manifest" href="{{ "/manifest.json" | relURL }}">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e08424">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
-  {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
-  {{ end }}
+  {{ if .RSSLink }}<link rel="alternate" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link rel="feed" href="{{ .RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}" />{{ end }}
   <script defer src="{{ "/js/main.bundle.js" | relURL }}"></script>
 </head>
 
 <body>
 {{ block "header" . }}{{ partial "header" . }}{{end}}
+
 <main>
 {{ block "main" . }}{{end}}
 </main>
+
 {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 </body>
 
