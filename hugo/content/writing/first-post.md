@@ -6,7 +6,7 @@ draft: false
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page.](/posts/second-post)
+[Link to another page.](/writing/second-post)
 
 There should be whitespace between paragraphs.
 
