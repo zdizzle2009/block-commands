@@ -10,4 +10,5 @@ Get in touch here.
 - Twitter
 - GitHub
 - Dribbble
-  etc
+
+etc.
