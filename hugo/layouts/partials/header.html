@@ -1,3 +1,5 @@
 <header>
-  <h1>{{ .Title }}</h1>
+  <h1>{{ .Site.Title }}</h1>
+  <nav>{{ $currentPage := . }}{{ range .Site.Menus.nav }}
+    <a class="nav-item{{if or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>{{ end }}</nav>
 </header>
