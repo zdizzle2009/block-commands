@@ -2,6 +2,8 @@
 # Site
 baseurl: "/"
 title: "Hugo Boilerplate"
+author:
+ name: "Luke Bennett"
 enableRobotsTXT: true
 googleAnalytics: ""
 # Content
