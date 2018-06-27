@@ -1,9 +1,17 @@
 backend:
-  name: github # git-gateway if using Netlify Identity integration
-  repo:  fspoettel/blaupause
+  name: github
+  repo: lukebennett88/hugo-starter
   branch: master
-  base_url: # See https://github.com/vencax/netlify-cms-github-oauth-provider or remove if using Netlify Identity
-publish_mode: editorial_workflow
-media_folder: "hugo/static/assets"
-public_folder: "/assets"
-collections: # See netlify-cms docs
+
+media_folder: "hugo/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+collections:
+  - name: "writing"
+    label: "Writing"
+    folder: "hugo/content/writing"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
