@@ -1,7 +1,5 @@
 ---
 title: "Aquatic Update"
-date: 2018-06-28T18:50:20+10:00
-draft: true
 ---
 
 The aquatic update is amazing.

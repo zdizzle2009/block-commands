@@ -1,6 +1,5 @@
 ---
 title: "How to Get a Command Block"
-draft: false
 ---
 
 To do this you will need to enter chat and type:

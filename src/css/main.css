@@ -23,6 +23,7 @@
   --color-text-green: #3d7144;
   --font-system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 21px;
 }
 
 body {
@@ -30,7 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-system-ui);
-  font-size: 21px;
   letter-spacing: 0.0003em;
   min-height: 100vh;
 }
@@ -122,7 +122,10 @@ body {
 }
 
 @supports (padding: max(0px)) {
-  body {
+  body,
+  header,
+  main,
+  footer {
     padding-left: max(12px, env(safe-area-inset-left));
     padding-right: max(12px, env(safe-area-inset-right));
   }
@@ -278,6 +281,9 @@ h6 {
   h6 {
     font-size: 95%;
     line-height: 2.1;
+  }
+  html {
+    font-size: 17px;
   }
 }
 
