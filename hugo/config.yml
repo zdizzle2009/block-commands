@@ -1,9 +1,9 @@
 ---
 # Site
 baseurl: "/"
-title: "Hugo Boilerplate"
+title: "Block Commands"
 author:
- name: "Luke Bennett"
+ name: "Zoe Swan"
 enableRobotsTXT: true
 googleAnalytics: ""
 # Content
