@@ -1,9 +1,0 @@
-{{ define "main" }}
-<section>
-  <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
-</section>
-{{ range .Paginator.Pages }}
-<article class="article-list">
-<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-{{ .Content }}</article>
-{{ end }}{{ template "_internal/pagination.html" . }}{{ end }}
