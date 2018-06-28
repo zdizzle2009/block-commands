@@ -108,6 +108,8 @@ h2 {
 
 h1 {
   font-family: "Press Start 2P", var(--font-system-ui), sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 
 body {
@@ -188,7 +190,8 @@ nav li:hover {
 }
 
 nav .active {
-  border-bottom: 2px solid;
+  background: hsla(117, 69%, 24%, 0.3);
+  border-bottom: none;
 }
 
 main {
