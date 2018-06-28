@@ -1,12 +1,9 @@
 /*! wysiwyg.css v0.0.3 | MIT License | github.com/jgthms/wysiwyg.css */
 body {
-  line-height: 1.6;
+  line-height: 1.7;
 }
 a {
   text-decoration: none;
-}
-a:hover {
-  border-bottom: 2px solid;
 }
 abbr {
   border-bottom: 1px dotted;
@@ -92,6 +89,7 @@ h1 {
   margin-bottom: 0.58333em;
   margin-top: 0.58333em;
   line-height: 1;
+  text-transform: uppercase;
 }
 h2 {
   font-size: 1.6em;
