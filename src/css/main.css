@@ -223,6 +223,10 @@ section {
   margin-bottom: 4em;
 }
 
+.homepage {
+  border-bottom: 6px dotted var(--color-text-green);
+}
+
 article {
   border-bottom: 6px dotted var(--color-text-green);
   margin: 0 auto 4em;
