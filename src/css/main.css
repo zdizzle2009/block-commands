@@ -101,15 +101,14 @@ hr {
   background: var(--color-background);
 }
 
-h1,
-h2 {
-  font-family: var(--font-system-ui);
-}
-
 h1 {
   font-family: "Press Start 2P", var(--font-system-ui), sans-serif;
   line-height: 1.5;
   letter-spacing: -0.02em;
+}
+
+h2 {
+  line-height: 1.5;
 }
 
 body {
@@ -236,10 +235,6 @@ article:last-child {
   border: none;
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-.article-list {
-  /* font-size: 80%; */
 }
 
 footer {
