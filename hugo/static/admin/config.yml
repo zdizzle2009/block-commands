@@ -28,7 +28,7 @@ collections:
 
   - name: "videos"
     label: "Videos"
-    folder: "hugo/content/vidoes"
+    folder: "hugo/content/videos"
     create: true
     slug: "{{slug}}"
     fields:
