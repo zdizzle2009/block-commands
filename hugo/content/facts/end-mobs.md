@@ -2,10 +2,11 @@
 title: End Mobs
 date: '2018-06-30T09:04:15+10:00'
 ---
-
 Way to easy:
 
 ### Enderman:
+
+![Enderman](/img/enderman.png)
 
 Ender man can teleport and pick up blocks ender man hate swimming and die if they stay in there to long.
 
