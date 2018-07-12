@@ -219,6 +219,17 @@ main a:hover {
   border-bottom: 6px solid #4a9749;
 }
 
+main .pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+main .pagination li {
+  display: inline;
+  margin: 0.25rem;
+}
+
 section {
   margin-bottom: 4em;
 }
