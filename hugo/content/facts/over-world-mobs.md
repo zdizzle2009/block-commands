@@ -22,6 +22,8 @@ All skeletons have a bow and unlimited arrows. Thats crazy! They should have ten
 
 ### Slime:
 
+![Slime](/img/slime.png)
+
 Slime are so annoying but they don’t burn in the daylight (but slimes can't swim, so drown them.) Slimes are found in the swamp biome and slimes can multiply so fight them under water please.
 
 ### Enderman:
