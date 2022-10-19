@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: theme('colors.green.dark');
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23509b4d' width='11' height='11'/%3E%3Crect fill='%234e9a4c' x='10' width='11' height='11'/%3E%3Crect fill='%234c984a' y='10' width='11' height='11'/%3E%3Crect fill='%234a9749' x='20' width='11' height='11'/%3E%3Crect fill='%23489647' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23469546' y='20' width='11' height='11'/%3E%3Crect fill='%23459345' x='30' width='11' height='11'/%3E%3Crect fill='%23439244' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23429144' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23418f43' y='30' width='11' height='11'/%3E%3Crect fill='%233f8e42' x='40' width='11' height='11'/%3E%3Crect fill='%233e8c42' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%233d8b41' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%233b8a40' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%233a8840' y='40' width='11' height='11'/%3E%3Crect fill='%2339873f' x='50' width='11' height='11'/%3E%3Crect fill='%2338853e' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%2336843e' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%2335823d' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%2334813c' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23337f3c' y='50' width='11' height='11'/%3E%3Crect fill='%23317e3b' x='60' width='11' height='11'/%3E%3Crect fill='%23307c3a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%232f7b3a' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%232e7939' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%232d7839' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%232c7638' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%232b7537' x='70' width='11' height='11'/%3E%3Crect fill='%232a7337' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23287136' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23277036' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23266e35' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23256c34' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23246b34' x='80' width='11' height='11'/%3E%3Crect fill='%23236933' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23226732' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23216632' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23206431' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%231f6231' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%231e6130' x='90' width='11' height='11'/%3E%3Crect fill='%231d5f2f' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%231c5d2f' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%231c5b2e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%231b592d' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%231a582d' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%2319562c' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%2318542b' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%2317522b' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%2316502a' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23164e29' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23154d28' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23144b28' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23134927' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23124726' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23124525' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23114324' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23104124' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%230f3f23' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%230f3d22' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%230e3b21' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.prose img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.prose iframe {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+}

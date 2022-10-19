@@ -1,4 +1,0 @@
----
-title: "Facts"
-menu: "nav"
----
