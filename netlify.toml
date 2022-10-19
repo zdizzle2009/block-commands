@@ -1,9 +1,0 @@
-[build]
-  command = "yarn run build"
-  publish = "public"
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.42.2"
-  YARN_VERSION = "1.7.0"
-[context.production.environment]
-  HUGO_VERSION = "0.42.2"
-  YARN_VERSION = "1.7.0"

@@ -1,0 +1,11 @@
+---
+layout: '../../layouts/BlogPost.astro'
+title: 'Teleport'
+pubDate: 2018-06-28
+---
+
+Ever wanted to teleport to your friend?
+
+Enter the chat and type `/tp $your-user-name to $your-friends-user-name`.
+
+Press `enter`. Boom done.

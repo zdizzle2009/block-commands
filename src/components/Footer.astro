@@ -1,0 +1,20 @@
+---
+import { AUTHOR_NAME } from '../config';
+
+const today = new Date();
+const year = today.getFullYear();
+---
+
+<footer class="mt-auto pt-4">
+	<div
+		class="max-w-3xl mx-auto bg-black w-full p-4 bg-opacity-50 text-white flex items-center justify-between flex-wrap"
+	>
+		<span>
+			<a href="#TOP" class="text-white hover:text-gray-300">Back to top ^</a>
+		</span>
+		<span>
+			&copy; {year}
+			{AUTHOR_NAME}
+		</span>
+	</div>
+</footer>
