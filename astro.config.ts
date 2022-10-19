@@ -6,9 +6,6 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
-import netlify from '@astrojs/netlify/edge-functions';
-
-// https://astro.build/config
 export default defineConfig({
 	site: 'https://block-commands.netlify.app',
 	integrations: [
@@ -16,6 +13,5 @@ export default defineConfig({
 		sitemap(),
 		tailwind({ config: { applyBaseStyles: false } }),
 	],
-	output: 'server',
-	adapter: netlify(),
+	output: 'static',
 });
