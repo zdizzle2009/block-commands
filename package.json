@@ -1,15 +1,16 @@
 {
-	"name": "@example/blog",
-	"type": "module",
+	"name": "block-commands",
 	"version": "0.0.1",
 	"private": true,
+	"type": "module",
 	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"format": "prettier -w --plugin-search-dir=. .",
+		"astro": "astro",
 		"build": "astro build",
+		"clean": "git clean -xdf",
+		"dev": "astro dev",
+		"format": "prettier -w --plugin-search-dir=. .",
 		"preview": "astro preview",
-		"astro": "astro"
+		"start": "astro dev"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^0.11.4",
