@@ -1,4 +1,6 @@
 import { defineConfig } from 'astro/config';
+import { FontaineTransform } from 'fontaine'
+
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
@@ -18,4 +20,26 @@ export default defineConfig({
 	],
 	output: 'server',
 	adapter: netlify(),
+	vite: {
+		plugins:  [
+			FontaineTransform.vite({
+				fallbacks: [
+				'ui-sans-serif',
+				'system-ui',
+				'-apple-system',
+				'BlinkMacSystemFont',
+				'Segoe UI',
+				'Roboto',
+				'Helvetica Neue',
+				'Arial',
+				'Noto Sans',
+				'sans-serif',
+				'"Apple Color Emoji"',
+				'"Segoe UI Emoji"',
+				'Segoe UI Symbol',
+				'"Noto Color Emoji"',
+			],
+			})
+		],
+	}
 });
