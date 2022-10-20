@@ -1,0 +1,28 @@
+---
+layout: '../../layouts/BlogPost.astro'
+title: 'Caves and cliffs'
+pubDate: 2022-10-20
+heroImage: '/caves-and-cliffs.jpg'
+---
+
+Caves and cliffs is the most recent minecraft update, it had added plenty of
+wonderful new features.
+
+The main feature of this update is the change in world generation meaning we now
+have more realisticly sized mountains and deeper levels and copper ores in the
+mines. In the caves we now have two new biomes, the skulk and the lush biomes.
+The skulk biome is where you can find the newest amd toughest boss the Warden.
+
+The Warden is three metres tall and attacks like and iron golem with a bit of
+magic and extreme damage buffs. The sulk biome also has skulk sensors that can
+detect if an entity is there and sends out a redstone signal allowing crazy and
+creative new ways for redstone to advance. The lush biome as it sounds is lush!
+It has beautiful moss blocks and carpets and new plants to discover. It also is
+a great place for farming axolotyls and glow squid. Both mobs came before the
+update.
+
+Speaking of new mobs, Mojang added goats for the mountains. They also added a
+new kind of snow, powdered snow, if you walk into powdered snow you sink like
+quick sand. With this new item if you scoop it into a bucket you can now use it
+for a clutch to save yourself from fall damage. That pretty much it for the
+caves and cliffs update besides a few bug patches.
