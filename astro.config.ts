@@ -6,10 +6,6 @@ import { defineConfig } from 'astro/config';
 /** @see https://astro.build/config */
 export default defineConfig({
 	site: 'https://block-commands.netlify.app',
-	integrations: [
-		mdx(),
-		sitemap(),
-		tailwind({ config: { applyBaseStyles: false } }),
-	],
+	integrations: [mdx(), sitemap(), tailwind()],
 	output: 'static',
 });
