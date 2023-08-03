@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: End Mobs
 pubDate: 2018-06-30
 ---

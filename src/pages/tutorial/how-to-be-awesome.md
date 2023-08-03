@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: how to be awesome
 pubDate: 2018-07-07
 ---

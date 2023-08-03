@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: Overworld Mobs
 pubDate: 2018-06-29
 ---

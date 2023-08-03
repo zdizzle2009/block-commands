@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: Ocean Mobs
 pubDate: 2019-07-11
 ---

@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: 'Caves and cliffs'
 pubDate: 2022-10-20
 heroImage: '/caves-and-cliffs.jpg'

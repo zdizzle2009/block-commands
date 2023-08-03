@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: How to Get a Command Block
 pubDate: 2019-01-12
 ---

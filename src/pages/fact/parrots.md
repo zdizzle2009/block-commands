@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: 'Parrots'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 2019-01-12

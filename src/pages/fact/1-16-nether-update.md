@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: '1.16 Nether update!'
 pubDate: 2021-04-09
 ---

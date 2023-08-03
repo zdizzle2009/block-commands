@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: how to make bouncy water in mincraft
 pubDate: 2018-11-11
 ---

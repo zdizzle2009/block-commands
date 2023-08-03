@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/blog-post.astro'
 title: 'How to make the ultimate survival house'
 pubDate: 2018-06-28
 ---
