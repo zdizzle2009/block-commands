@@ -1,4 +1,5 @@
-import mdx from '@astrojs/mdx';
+import markdoc from '@astrojs/markdoc';
+import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { defineConfig } from 'astro/config';
@@ -6,6 +7,6 @@ import { defineConfig } from 'astro/config';
 /** @see https://astro.build/config */
 export default defineConfig({
 	site: 'https://block-commands.netlify.app',
-	integrations: [mdx(), sitemap(), tailwind()],
-	output: 'static',
+	integrations: [markdoc(), react(), sitemap(), tailwind()],
+	output: 'hybrid',
 });
