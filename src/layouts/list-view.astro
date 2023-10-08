@@ -1,0 +1,65 @@
+---
+import BaseHead from '../components/base-head.astro';
+import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+import Main from '../components/main.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../config';
+
+type Props = {
+	posts: Record<string, any>[];
+};
+
+const { posts } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-AU">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<Main>
+			<section>
+				<table class="m-0 min-w-full text-base">
+					<thead class="sr-only">
+						<tr>
+							<th>Date</th>
+							<th>Title</th>
+							<th>Category</th>
+						</tr>
+					</thead>
+					<tbody>
+						{
+							posts.map((post) => (
+								<tr class="border-b border-gray-200">
+									<td class="whitespace-nowrap p-2">
+										<time datetime={post.frontmatter.pubDate}>
+											{new Date(post.frontmatter.pubDate).toLocaleDateString(
+												'en-AU',
+												{
+													year: 'numeric',
+													month: 'short',
+													day: 'numeric',
+												},
+											)}
+										</time>
+									</td>
+									<td class="w-full p-2">
+										<a href={post.url}>{post.frontmatter.title}</a>
+									</td>
+									<td class="whitespace-nowrap p-2">
+										<a href={`/${post.url.split('/')[1]}`} class="ml-auto">
+											#{post.url.split('/')[1]}
+										</a>
+									</td>
+								</tr>
+							))
+						}
+					</tbody>
+				</table>
+			</section>
+		</Main>
+		<Footer />
+	</body>
+</html>

@@ -1,11 +1,6 @@
 ---
-import BaseHead from '../components/base-head.astro';
-import Footer from '../components/footer.astro';
-import Header from '../components/header.astro';
-import Main from '../components/main.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../config';
+import ListView from '../layouts/list-view.astro';
 
-// Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob('./**/*.{md,mdx}')).sort(
 	(a, b) =>
 		new Date(b.frontmatter.pubDate).valueOf() -
@@ -13,39 +8,4 @@ const posts = (await Astro.glob('./**/*.{md,mdx}')).sort(
 );
 ---
 
-<!doctype html>
-<html lang="en-AU">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<Main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li class="flex flex-wrap items-start gap-2">
-								<time datetime={post.frontmatter.pubDate}>
-									{new Date(post.frontmatter.pubDate).toLocaleDateString(
-										'en-AU',
-										{
-											year: 'numeric',
-											month: 'short',
-											day: 'numeric',
-										},
-									)}
-								</time>
-								<a href={post.url}>{post.frontmatter.title}</a>
-								<a href={`/${post.url.split('/')[1]}`} class="ml-auto">
-									#{post.url.split('/')[1]}
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</Main>
-		<Footer />
-	</body>
-</html>
+<ListView posts={posts} />
