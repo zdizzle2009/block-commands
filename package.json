@@ -13,7 +13,7 @@
 		"start": "astro dev"
 	},
 	"dependencies": {
-		"@astrojs/markdoc": "^0.5.2",
+		"@astrojs/markdoc": "^0.7.0",
 		"@astrojs/mdx": "^1.1.1",
 		"@astrojs/react": "^3.0.3",
 		"@astrojs/rss": "^3.0.0",
