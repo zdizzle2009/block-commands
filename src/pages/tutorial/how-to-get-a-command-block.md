@@ -1,9 +1,0 @@
----
-layout: '../../layouts/blog-post.astro'
-title: How to Get a Command Block
-pubDate: 2019-01-12
----
-
-To do this you will need to enter chat and type /give @s command block
-
-That is how you get a command block, but enter it first!

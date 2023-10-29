@@ -1,0 +1,20 @@
+---
+import { ListView } from '../../components/list-view';
+import { reader } from '../../keystatic/reader';
+import MainLayout from '../../layouts/main-layout.astro';
+import { sortEntries } from '../../lib/get-sorted-entries';
+
+const videos = await reader.collections.videos.all();
+
+const posts = sortEntries([
+	...videos.map((tutorial) => ({
+		...tutorial,
+		category: "videos",
+		href: `videos/${tutorial.slug}`,
+	})),
+])
+---
+
+<MainLayout title="Videos">
+	<ListView posts={posts} />
+</MainLayout>

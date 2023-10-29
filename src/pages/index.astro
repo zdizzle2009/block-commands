@@ -1,11 +1,11 @@
 ---
-import ListView from '../layouts/list-view.astro';
+import { ListView } from '../components/list-view';
+import MainLayout from '../layouts/main-layout.astro';
+import { getSortedEntries } from '../lib/get-sorted-entries';
 
-const posts = (await Astro.glob('./**/*.{md,mdx}')).sort(
-	(a, b) =>
-		new Date(b.frontmatter.pubDate).valueOf() -
-		new Date(a.frontmatter.pubDate).valueOf(),
-);
+const posts = await getSortedEntries()
 ---
 
-<ListView posts={posts} />
+<MainLayout>
+	<ListView posts={posts} />
+</MainLayout>
