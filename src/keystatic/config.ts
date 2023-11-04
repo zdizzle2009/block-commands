@@ -2,11 +2,21 @@ import { collection, fields, config as keystaticConfig } from '@keystatic/core';
 
 import { componentBlocks } from './component-blocks';
 
+const isDev = process.env.NODE_ENV === 'development';
+
 export const config = keystaticConfig({
-	storage: {
-		kind: 'local',
+	cloud: {
+		project: 'luke-bennett/block-commands',
 	},
+	storage: isDev
+		? {
+				kind: 'local',
+		  }
+		: {
+				kind: 'cloud',
+		  },
 	collections: {
+		// Facts
 		facts: collection({
 			label: 'Facts',
 			slugField: 'title',
@@ -48,6 +58,8 @@ export const config = keystaticConfig({
 				}),
 			},
 		}),
+
+		// Tutorials
 		tutorials: collection({
 			label: 'Tutorials',
 			slugField: 'title',
@@ -89,6 +101,8 @@ export const config = keystaticConfig({
 				}),
 			},
 		}),
+
+		// Videos
 		videos: collection({
 			label: 'Videos',
 			slugField: 'title',
