@@ -1,7 +1,6 @@
 ---
-import MainLayout from '../../layouts/main-layout.astro';
-import {ListView} from '../../components/list-view';
-
+import { ListView } from '../../components/list-view';
+import MainLayout from '../../components/main-layout.astro';
 import { reader } from '../../keystatic/reader';
 import { sortEntries } from '../../lib/get-sorted-entries';
 
@@ -10,12 +9,12 @@ const facts = await reader.collections.facts.all();
 const posts = sortEntries([
 	...facts.map((tutorial) => ({
 		...tutorial,
-		category: "facts",
+		category: 'facts',
 		href: `facts/${tutorial.slug}`,
 	})),
-])
+]);
 ---
 
-<MainLayout title='Facts'>
+<MainLayout title="Facts">
 	<ListView posts={posts} />
 </MainLayout>

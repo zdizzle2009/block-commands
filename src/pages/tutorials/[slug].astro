@@ -1,7 +1,7 @@
 ---
 import { Post } from "../../components/post";
 import { reader } from "../../keystatic/reader";
-import MainLayout from "../../layouts/main-layout.astro";
+import MainLayout from "../../components/main-layout.astro";
 
 const post = await reader.collections.tutorials.read(Astro.params.slug ?? '');
 
