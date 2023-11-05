@@ -10,7 +10,7 @@ const posts = sortEntries([
 	...videos.map((tutorial) => ({
 		...tutorial,
 		category: 'videos',
-		href: `videos/${tutorial.slug}`,
+		href: `/videos/${tutorial.slug}`,
 	})),
 ]);
 ---

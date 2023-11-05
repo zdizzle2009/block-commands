@@ -9,17 +9,17 @@ export async function getSortedEntries() {
 		...facts.map((fact) => ({
 			...fact,
 			category: 'facts',
-			href: `facts/${fact.slug}`,
+			href: `/facts/${fact.slug}`,
 		})),
 		...tutorials.map((tutorial) => ({
 			...tutorial,
 			category: 'tutorials',
-			href: `tutorials/${tutorial.slug}`,
+			href: `/tutorials/${tutorial.slug}`,
 		})),
 		...videos.map((video) => ({
 			...video,
 			category: 'videos',
-			href: `videos/${video.slug}`,
+			href: `/videos/${video.slug}`,
 		})),
 	];
 
