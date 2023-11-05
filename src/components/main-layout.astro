@@ -1,0 +1,97 @@
+---
+import '@fontsource/press-start-2p';
+import '../styles/global.css';
+
+import { ViewTransitions } from 'astro:transitions';
+
+import { AUTHOR_NAME, SITE_TITLE } from '../config';
+import HeaderLink from './header-link.astro';
+
+type Props = {
+	description?: string;
+	image?: string;
+	title?: string;
+};
+
+const { description, image = '/placeholder-social.jpg', title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-AU">
+	<head>
+		<!-- Global Metadata -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Primary Meta Tags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={new URL(image, Astro.url)} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+		<!-- View transitions -->
+		<ViewTransitions />
+	</head>
+
+	<body>
+		<header class="border-t-8 border-green-light px-4 text-green-light">
+			<div class="mx-auto w-full max-w-3xl pt-24">
+				<a
+					href="/"
+					class="text-center font-display text-5xl uppercase leading-[1.25]"
+				>
+					<h2>
+						{SITE_TITLE}
+					</h2>
+				</a>
+				<div class="pb-12 pt-8">
+					<div
+						class="flex flex-wrap items-center justify-between border-b-8 border-green-light text-lg"
+					>
+						<nav class="flex flex-wrap">
+							<HeaderLink href="/facts">Facts</HeaderLink>
+							<HeaderLink href="/videos">Videos</HeaderLink>
+							<HeaderLink href="/tutorials">Tutorials</HeaderLink>
+						</nav>
+						<span>
+							by {AUTHOR_NAME}
+						</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="px-4">
+			<div class="prose mx-auto w-full max-w-3xl bg-green-light px-4 py-12">
+				<slot />
+			</div>
+		</main>
+
+		<footer class="mt-auto pt-4">
+			<div
+				class="mx-auto flex w-full max-w-3xl flex-wrap items-center justify-between bg-black bg-opacity-50 p-4 text-white"
+			>
+				<span>
+					<a href="#TOP" class="text-white hover:text-gray-300">Back to top ^</a
+					>
+				</span>
+				<span>&copy; {new Date().getFullYear()}{' '}{AUTHOR_NAME}</span>
+			</div>
+		</footer>
+	</body>
+</html>

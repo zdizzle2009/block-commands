@@ -1,9 +1,9 @@
 ---
 import { ListView } from '../components/list-view';
-import MainLayout from '../layouts/main-layout.astro';
+import MainLayout from '../components/main-layout.astro';
 import { getSortedEntries } from '../lib/get-sorted-entries';
 
-const posts = await getSortedEntries()
+const posts = await getSortedEntries();
 ---
 
 <MainLayout>
