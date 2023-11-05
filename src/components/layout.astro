@@ -4,7 +4,7 @@ import '../styles/global.css';
 
 import { ViewTransitions } from 'astro:transitions';
 
-import { AUTHOR_NAME, SITE_TITLE } from '../config';
+import { AUTHOR_NAME, SITE_DESCRIPTION, SITE_TITLE } from '../config';
 import HeaderLink from './header-link.astro';
 
 type Props = {
@@ -13,7 +13,11 @@ type Props = {
 	title?: string;
 };
 
-const { description, image = '/placeholder-social.jpg', title } = Astro.props;
+const {
+	description = SITE_DESCRIPTION,
+	image = '/placeholder-social.jpg',
+	title = SITE_TITLE,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -55,9 +59,7 @@ const { description, image = '/placeholder-social.jpg', title } = Astro.props;
 					href="/"
 					class="text-center font-display text-5xl uppercase leading-[1.25]"
 				>
-					<h2>
-						{SITE_TITLE}
-					</h2>
+					<h2>{SITE_TITLE}</h2>
 				</a>
 				<div class="pb-12 pt-8">
 					<div
