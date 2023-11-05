@@ -1,6 +1,6 @@
 ---
+import Layout from '../../components/layout.astro';
 import { ListView } from '../../components/list-view';
-import MainLayout from '../../components/main-layout.astro';
 import { reader } from '../../keystatic/reader';
 import { sortEntries } from '../../lib/get-sorted-entries';
 
@@ -15,6 +15,6 @@ const posts = sortEntries([
 ]);
 ---
 
-<MainLayout title="Tutorials">
+<Layout title="Tutorials">
 	<ListView posts={posts} />
-</MainLayout>
+</Layout>
