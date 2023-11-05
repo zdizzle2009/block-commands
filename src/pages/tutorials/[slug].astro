@@ -1,7 +1,7 @@
 ---
 import { Post } from "../../components/post";
 import { reader } from "../../keystatic/reader";
-import MainLayout from "../../components/main-layout.astro";
+import Layout from "../../components/layout.astro";
 
 const post = await reader.collections.tutorials.read(Astro.params.slug ?? '');
 
@@ -20,6 +20,6 @@ export async function getStaticPaths() {
 }
 ---
 
-<MainLayout title={post.title} description={post.description}>
+<Layout title={post.title} description={post.description}>
 	<Post document={document} post={post} />
-</MainLayout>
+</Layout>
