@@ -9,7 +9,6 @@ type ListViewProps = {
 			title: string;
 			description: string;
 			pubDate: string;
-			heroImage: string | null;
 			content: () => Promise<DocumentElement[]>;
 		};
 	}>;

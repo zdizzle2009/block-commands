@@ -4,6 +4,7 @@ import {
 	type DocumentRendererProps,
 } from '@keystatic/core/renderer';
 
+import { CloudImage } from '../components/cloud-image';
 import type { componentBlocks } from './component-blocks';
 
 export function DocumentRenderer(props: DocumentRendererProps) {
@@ -17,13 +18,7 @@ export function DocumentRenderer(props: DocumentRendererProps) {
 
 const componentBlockRenderers = {
 	cloudImage(props) {
-		return (
-			<img
-				{...props}
-				height={props.height ?? undefined}
-				width={props.width ?? undefined}
-			/>
-		);
+		return <CloudImage {...props} />;
 	},
 	videoEmbed(props) {
 		return (

@@ -10,7 +10,6 @@ type PostProps = {
 		title: string;
 		description: string;
 		pubDate: string;
-		heroImage: string | null;
 	};
 };
 
@@ -18,9 +17,6 @@ export function Post({ document, post }: PostProps) {
 	return (
 		<Fragment>
 			<h1>{post.title}</h1>
-			{post.heroImage ? (
-				<img width={720} height={360} src={post.heroImage} alt="" />
-			) : null}
 			{post.pubDate ? (
 				<time dateTime={toIsoString(post.pubDate)} className="sr-only">
 					{toHumanReadableDate(post.pubDate)}
