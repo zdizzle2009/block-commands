@@ -8,13 +8,7 @@ export default config({
 	cloud: {
 		project: 'luke-bennett/block-commands',
 	},
-	storage: isDev
-		? {
-				kind: 'local',
-		  }
-		: {
-				kind: 'cloud',
-		  },
+	storage: !isDev ? { kind: 'local' } : { kind: 'cloud' },
 	collections: {
 		// Facts
 		facts: collection({
