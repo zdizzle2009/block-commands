@@ -17,7 +17,7 @@
 		"@astrojs/markdoc": "^0.8.0",
 		"@astrojs/netlify": "^3.0.4",
 		"@astrojs/react": "^3.0.4",
-		"@astrojs/rss": "^3.0.0",
+		"@astrojs/rss": "^4.0.0",
 		"@astrojs/sitemap": "^3.0.3",
 		"@astrojs/tailwind": "^5.0.2",
 		"@fontsource/press-start-2p": "^5.0.17",
