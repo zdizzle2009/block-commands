@@ -13,7 +13,7 @@ dependencies:
     version: 5.0.0(astro@4.2.1)
   '@astrojs/react':
     specifier: ^3.0.4
-    version: 3.0.4(@types/react-dom@18.2.14)(@types/react@18.2.35)(react-dom@18.2.0)(react@18.2.0)(vite@4.5.0)
+    version: 3.0.4(@types/react-dom@18.2.14)(@types/react@18.2.35)(react-dom@18.2.0)(react@18.2.0)(vite@4.5.2)
   '@astrojs/rss':
     specifier: ^4.0.0
     version: 4.0.1
@@ -180,7 +180,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@3.0.4(@types/react-dom@18.2.14)(@types/react@18.2.35)(react-dom@18.2.0)(react@18.2.0)(vite@4.5.0):
+  /@astrojs/react@3.0.4(@types/react-dom@18.2.14)(@types/react@18.2.35)(react-dom@18.2.0)(react@18.2.0)(vite@4.5.2):
     resolution: {integrity: sha512-v+qltrm5nfqqm8C5ymYDBxrGlvNouRr+iCLcUWvNX65abVz8GzUqquhPQjmCTDXphn1Qc558Uxzc4s79l02skw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -191,7 +191,7 @@ packages:
     dependencies:
       '@types/react': 18.2.35
       '@types/react-dom': 18.2.14
-      '@vitejs/plugin-react': 4.1.0(vite@4.5.0)
+      '@vitejs/plugin-react': 4.1.0(vite@4.5.2)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       ultrahtml: 1.5.2
@@ -3006,7 +3006,7 @@ packages:
       - graphql
     dev: false
 
-  /@vitejs/plugin-react@4.1.0(vite@4.5.0):
+  /@vitejs/plugin-react@4.1.0(vite@4.5.2):
     resolution: {integrity: sha512-rM0SqazU9iqPUraQ2JlIvReeaxOoRj6n+PzB1C0cBzIbd8qP336nC39/R9yPi3wVcah7E7j/kdU1uCUqMEU4OQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3017,7 +3017,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.23.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 4.5.0
+      vite: 4.5.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -6929,8 +6929,8 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@4.5.0:
-    resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
+  /vite@4.5.2:
+    resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
