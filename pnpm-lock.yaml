@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/markdoc':
-    specifier: ^0.8.0
-    version: 0.8.0(@types/react@18.2.35)(astro@4.2.1)(react@18.2.0)
+    specifier: ^0.9.0
+    version: 0.9.0(@types/react@18.2.35)(astro@4.2.1)(react@18.2.0)
   '@astrojs/netlify':
     specifier: ^5.0.0
     version: 5.0.0(astro@4.2.1)
@@ -119,8 +119,8 @@ packages:
     resolution: {integrity: sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==}
     dev: false
 
-  /@astrojs/markdoc@0.8.0(@types/react@18.2.35)(astro@4.2.1)(react@18.2.0):
-    resolution: {integrity: sha512-y2oMDoInwVcykf2RTwlrB6KSf5H5PVnrRIu7wvxO52mFgwj5v5UPv82RyLYLx3BNPlj+aIlgG+c6SUsSP8M9fQ==}
+  /@astrojs/markdoc@0.9.0(@types/react@18.2.35)(astro@4.2.1)(react@18.2.0):
+    resolution: {integrity: sha512-nqB/4jESJ/7703hULrb4wDFN7w8zQpkyzNgLh6hCKAhoM88ofJMmGxn946haBW2BRL0OsN3INNCuo1XxsJKrQg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
@@ -134,7 +134,6 @@ packages:
       gray-matter: 4.0.3
       htmlparser2: 9.0.0
       kleur: 4.1.5
-      shikiji: 0.6.13
       zod: 3.22.4
     transitivePeerDependencies:
       - '@types/react'
@@ -6254,12 +6253,6 @@ packages:
 
   /shikiji-core@0.9.19:
     resolution: {integrity: sha512-AFJu/vcNT21t0e6YrfadZ+9q86gvPum6iywRyt1OtIPjPFe25RQnYJyxHQPMLKCCWA992TPxmEmbNcOZCAJclw==}
-    dev: false
-
-  /shikiji@0.6.13:
-    resolution: {integrity: sha512-4T7X39csvhT0p7GDnq9vysWddf2b6BeioiN3Ymhnt3xcy9tXmDcnsEFVxX18Z4YcQgEE/w48dLJ4pPPUcG9KkA==}
-    dependencies:
-      hast-util-to-html: 9.0.0
     dev: false
 
   /shikiji@0.9.19:
