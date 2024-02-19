@@ -26,7 +26,7 @@ export function ListView({ posts }: ListViewProps) {
 			</thead>
 			<tbody>
 				{posts.map((post) => (
-					<tr className="border-b border-gray-200">
+					<tr key={post.slug} className="border-b border-gray-200">
 						<td className="whitespace-nowrap p-2">
 							<time dateTime={post.entry.pubDate}>
 								{new Date(post.entry.pubDate).toLocaleDateString('en-AU', {
