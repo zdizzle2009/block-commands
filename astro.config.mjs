@@ -1,5 +1,5 @@
 import markdoc from '@astrojs/markdoc';
-import netlify from '@astrojs/netlify/functions';
+import netlify from '@astrojs/netlify';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -11,5 +11,7 @@ export default defineConfig({
 	site: 'https://block-commands.netlify.app',
 	integrations: [keystatic(), markdoc(), react(), sitemap(), tailwind()],
 	output: 'hybrid',
-	adapter: netlify(),
+	adapter: netlify({
+		edgeMiddleware: true,
+	}),
 });
