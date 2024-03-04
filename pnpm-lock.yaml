@@ -30,8 +30,8 @@ dependencies:
     specifier: ^4.1.1
     version: 4.1.1(prettier@3.2.5)
   '@keystatic/astro':
-    specifier: ^3.0.0
-    version: 3.0.2(@keystatic/core@0.4.0)(astro@4.4.6)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^4.0.0
+    version: 4.0.0(@keystatic/core@0.4.0)(astro@4.4.6)(react-dom@18.2.0)(react@18.2.0)
   '@keystatic/core':
     specifier: ^0.4.0
     version: 0.4.0(react-dom@18.2.0)(react@18.2.0)
@@ -1055,8 +1055,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@keystatic/astro@3.0.2(@keystatic/core@0.4.0)(astro@4.4.6)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Ver1ivtIKwNebJb/x50nDsneHg/gjf0Cszy4t/+gqCi3YR5mjRBhY2poQzy9tplYytBN3JCHeeRsrjDb9dwXQg==}
+  /@keystatic/astro@4.0.0(@keystatic/core@0.4.0)(astro@4.4.6)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3cRoZmQJnwsyKSZVW7XA5HnJdDvBBPFOEMB4IhYO/s7kqKmWdNIGRaDyTveGyjkTSeoIyImJRmabtbsF1Y/QOg==}
     peerDependencies:
       '@keystatic/core': '*'
       astro: 2 || 3 || 4
