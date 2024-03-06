@@ -25,7 +25,7 @@ dependencies:
     version: 5.1.0(astro@4.4.8)(tailwindcss@3.4.1)
   '@fontsource/press-start-2p':
     specifier: ^5.0.17
-    version: 5.0.18
+    version: 5.0.19
   '@ianvs/prettier-plugin-sort-imports':
     specifier: ^4.1.1
     version: 4.1.1(prettier@3.2.5)
@@ -823,8 +823,8 @@ packages:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: false
 
-  /@fontsource/press-start-2p@5.0.18:
-    resolution: {integrity: sha512-6ILWQdS1+qowlQiJYKhlmoUwAd3cHBnPRaO0QtRsSfCxoLqEqDZ0QpdcpokNBHWn4DYy75ZkVB8Sjk630ZwnUg==}
+  /@fontsource/press-start-2p@5.0.19:
+    resolution: {integrity: sha512-U4+p6wj4vAmQf6Hcq0MFE2Qvoz5489dr6OZbQ7Mz4jmAmis2uVLNkR2gO2iSkXdgUDAzTM00eUyWklFCevQsNQ==}
     dev: false
 
   /@formatjs/ecma402-abstract@1.18.2:
