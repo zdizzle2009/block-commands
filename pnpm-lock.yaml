@@ -31,10 +31,10 @@ dependencies:
     version: 4.1.1(prettier@3.2.5)
   '@keystatic/astro':
     specifier: ^5.0.0
-    version: 5.0.0(@keystatic/core@0.5.1)(astro@4.4.14)(react-dom@18.2.0)(react@18.2.0)
+    version: 5.0.0(@keystatic/core@0.5.2)(astro@4.4.14)(react-dom@18.2.0)(react@18.2.0)
   '@keystatic/core':
     specifier: ^0.5.0
-    version: 0.5.1(react-dom@18.2.0)(react@18.2.0)
+    version: 0.5.2(react-dom@18.2.0)(react@18.2.0)
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
@@ -1055,7 +1055,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@keystatic/astro@5.0.0(@keystatic/core@0.5.1)(astro@4.4.14)(react-dom@18.2.0)(react@18.2.0):
+  /@keystatic/astro@5.0.0(@keystatic/core@0.5.2)(astro@4.4.14)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ahPtok9c1IEwjXwL7Ud6ooRPA7CpVGTQV/uHk560zznNX913E2QX9MlmO10qQtgvUwl2mPK7U68ucpwLp3fWfw==}
     peerDependencies:
       '@keystatic/core': '*'
@@ -1064,7 +1064,7 @@ packages:
       react-dom: ^18.2.0
     dependencies:
       '@babel/runtime': 7.24.0
-      '@keystatic/core': 0.5.1(react-dom@18.2.0)(react@18.2.0)
+      '@keystatic/core': 0.5.2(react-dom@18.2.0)(react@18.2.0)
       '@types/react': 18.2.64
       astro: 4.4.14(typescript@5.4.2)
       cookie: 0.5.0
@@ -1073,8 +1073,8 @@ packages:
       set-cookie-parser: 2.6.0
     dev: false
 
-  /@keystatic/core@0.5.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-fFTqdr2umVDpWGCxWHhxq0ENaxyKpaGrYhEKtZd4UzFKbZbdwX5PHS1SeHLlhrL8d1R6G++DeNhI/4Adcqf5iA==}
+  /@keystatic/core@0.5.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-psIQ6FUiFUDaACfoeAYnQgYtjxFUVY4mZHR0IO4awaOzPY/cUqm0gn7XzCfrMg+Kz6Y8Y2f8D6wq4u9g6odIug==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
