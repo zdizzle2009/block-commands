@@ -31,10 +31,10 @@ dependencies:
     version: 4.1.1(prettier@3.2.5)
   '@keystatic/astro':
     specifier: ^5.0.0
-    version: 5.0.0(@keystatic/core@0.5.2)(astro@4.5.2)(react-dom@18.2.0)(react@18.2.0)
+    version: 5.0.0(@keystatic/core@0.5.3)(astro@4.5.2)(react-dom@18.2.0)(react@18.2.0)
   '@keystatic/core':
     specifier: ^0.5.0
-    version: 0.5.2(react-dom@18.2.0)(react@18.2.0)
+    version: 0.5.3(react-dom@18.2.0)(react@18.2.0)
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
@@ -964,8 +964,8 @@ packages:
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
     dev: false
 
-  /@keystar/ui@0.7.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Tjxq6hlTFMOeXSKOL3dZS2lV0uBp+lWZFRMVIfCHSR9pUSnCpHRnwu2bPdt7wd+Yee4nCZLhGp1gwpjLKu80eQ==}
+  /@keystar/ui@0.7.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-TIV/SmycpY4UWhOSZ2e3csPtCN1hHQJlT+fiSuHWVqPTW94yH/XkCN5zogzUFOe2Z4a6IEkVoCa1BQQMTgpFNg==}
     peerDependencies:
       next: 13 || 14
       react: ^18.2.0
@@ -1059,7 +1059,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@keystatic/astro@5.0.0(@keystatic/core@0.5.2)(astro@4.5.2)(react-dom@18.2.0)(react@18.2.0):
+  /@keystatic/astro@5.0.0(@keystatic/core@0.5.3)(astro@4.5.2)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ahPtok9c1IEwjXwL7Ud6ooRPA7CpVGTQV/uHk560zznNX913E2QX9MlmO10qQtgvUwl2mPK7U68ucpwLp3fWfw==}
     peerDependencies:
       '@keystatic/core': '*'
@@ -1068,7 +1068,7 @@ packages:
       react-dom: ^18.2.0
     dependencies:
       '@babel/runtime': 7.24.0
-      '@keystatic/core': 0.5.2(react-dom@18.2.0)(react@18.2.0)
+      '@keystatic/core': 0.5.3(react-dom@18.2.0)(react@18.2.0)
       '@types/react': 18.2.65
       astro: 4.5.2(typescript@5.4.2)
       cookie: 0.5.0
@@ -1077,8 +1077,8 @@ packages:
       set-cookie-parser: 2.6.0
     dev: false
 
-  /@keystatic/core@0.5.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-psIQ6FUiFUDaACfoeAYnQgYtjxFUVY4mZHR0IO4awaOzPY/cUqm0gn7XzCfrMg+Kz6Y8Y2f8D6wq4u9g6odIug==}
+  /@keystatic/core@0.5.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-5LA4AMkPgm4yBFoNSW4OaZHd3lp9iN6pSnbuWHiMwPJ4TxRCi+PkXx7n9iorA6kUsxCPpEZnx8URquu25NtV9g==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1089,7 +1089,7 @@ packages:
       '@emotion/weak-memoize': 0.3.1
       '@floating-ui/react': 0.24.8(react-dom@18.2.0)(react@18.2.0)
       '@internationalized/string': 3.2.1
-      '@keystar/ui': 0.7.0(react-dom@18.2.0)(react@18.2.0)
+      '@keystar/ui': 0.7.1(react-dom@18.2.0)(react@18.2.0)
       '@markdoc/markdoc': 0.3.5(@types/react@18.2.65)(react@18.2.0)
       '@react-aria/focus': 3.16.2(react@18.2.0)
       '@react-aria/i18n': 3.10.2(react@18.2.0)
@@ -1126,7 +1126,7 @@ packages:
       is-hotkey: 0.2.0
       js-base64: 3.7.7
       js-yaml: 4.1.0
-      lib0: 0.2.91
+      lib0: 0.2.92
       lru-cache: 7.18.3
       match-sorter: 6.3.4
       mdast-util-from-markdown: 2.0.0
@@ -2738,8 +2738,8 @@ packages:
     dev: false
     optional: true
 
-  /@types/lodash@4.14.202:
-    resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+  /@types/lodash@4.17.0:
+    resolution: {integrity: sha512-t7dhREVv6dbNj0q17X12j7yDG4bD/DHYX7o5/DbDxobP0HnGPgpRz2Ej77aL7TZT3DSw13fqUTj8J4mMnqa7WA==}
     dev: false
 
   /@types/markdown-it@12.2.3:
@@ -4354,8 +4354,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /lib0@0.2.91:
-    resolution: {integrity: sha512-LRcTp8RmdHexL8olb7qErdROnJ2L6Js5Am99WQo0hiTRDWtk6vyUJJjTB6I/RcW8jwNQshM3NqH598DdhSOajA==}
+  /lib0@0.2.92:
+    resolution: {integrity: sha512-cLaqTQmHqOY7hte7FazjG6h8KKR7S36I9FoEnK/RWtCmmwoZ4e8wDnMB1tkU0a54yf2l+SUNyR/jfKuBsXxVNw==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
@@ -4598,8 +4598,8 @@ packages:
       - supports-color
     dev: false
 
-  /mdast-util-mdx-jsx@3.1.1:
-    resolution: {integrity: sha512-Di63TQEHbiApe6CFp/qQXCORHMHnmW2JFdr5PYH57LuEIPjijRHicAmL5wQu+B0/Q4p0qJaEOE1EkhiwxiNmAQ==}
+  /mdast-util-mdx-jsx@3.1.2:
+    resolution: {integrity: sha512-eKMQDeywY2wlHc97k5eD8VC+9ASMjN8ItEZQNGwJ6E0XWKiW/Z0V5/H8pvoXUf+y+Mj0VIgeRRbujBmFn4FTyA==}
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
@@ -4623,7 +4623,7 @@ packages:
     dependencies:
       mdast-util-from-markdown: 2.0.0
       mdast-util-mdx-expression: 2.0.0
-      mdast-util-mdx-jsx: 3.1.1
+      mdast-util-mdx-jsx: 3.1.2
       mdast-util-mdxjs-esm: 2.0.1
       mdast-util-to-markdown: 2.1.0
     transitivePeerDependencies:
@@ -6088,7 +6088,7 @@ packages:
     dependencies:
       '@juggle/resize-observer': 3.4.0
       '@types/is-hotkey': 0.1.10
-      '@types/lodash': 4.14.202
+      '@types/lodash': 4.17.0
       direction: 1.0.4
       is-hotkey: 0.1.8
       is-plain-object: 5.0.0
@@ -6791,7 +6791,7 @@ packages:
       y-protocols: ^1.0.1
       yjs: ^13.5.38
     dependencies:
-      lib0: 0.2.91
+      lib0: 0.2.92
       prosemirror-model: 1.19.4
       prosemirror-state: 1.4.3
       prosemirror-view: 1.33.1
@@ -6805,7 +6805,7 @@ packages:
     peerDependencies:
       yjs: ^13.0.0
     dependencies:
-      lib0: 0.2.91
+      lib0: 0.2.92
       yjs: 13.6.14
     dev: false
 
@@ -6844,7 +6844,7 @@ packages:
     resolution: {integrity: sha512-D+7KcUr0j+vBCUSKXXEWfA+bG4UQBviAwP3gYBhkstkgwy5+8diOPMx0iqLIOxNo/HxaREUimZRxqHGAHCL2BQ==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     dependencies:
-      lib0: 0.2.91
+      lib0: 0.2.92
     dev: false
 
   /yocto-queue@0.1.0:
