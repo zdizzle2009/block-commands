@@ -31,10 +31,10 @@ dependencies:
     version: 4.2.0(prettier@3.2.5)
   '@keystatic/astro':
     specifier: ^5.0.0
-    version: 5.0.0(@keystatic/core@0.5.3)(astro@4.5.3)(react-dom@18.2.0)(react@18.2.0)
+    version: 5.0.0(@keystatic/core@0.5.4)(astro@4.5.3)(react-dom@18.2.0)(react@18.2.0)
   '@keystatic/core':
     specifier: ^0.5.0
-    version: 0.5.3(react-dom@18.2.0)(react@18.2.0)
+    version: 0.5.4(react-dom@18.2.0)(react@18.2.0)
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
@@ -1059,7 +1059,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@keystatic/astro@5.0.0(@keystatic/core@0.5.3)(astro@4.5.3)(react-dom@18.2.0)(react@18.2.0):
+  /@keystatic/astro@5.0.0(@keystatic/core@0.5.4)(astro@4.5.3)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ahPtok9c1IEwjXwL7Ud6ooRPA7CpVGTQV/uHk560zznNX913E2QX9MlmO10qQtgvUwl2mPK7U68ucpwLp3fWfw==}
     peerDependencies:
       '@keystatic/core': '*'
@@ -1068,7 +1068,7 @@ packages:
       react-dom: ^18.2.0
     dependencies:
       '@babel/runtime': 7.24.0
-      '@keystatic/core': 0.5.3(react-dom@18.2.0)(react@18.2.0)
+      '@keystatic/core': 0.5.4(react-dom@18.2.0)(react@18.2.0)
       '@types/react': 18.2.65
       astro: 4.5.3(typescript@5.4.2)
       cookie: 0.5.0
@@ -1077,8 +1077,8 @@ packages:
       set-cookie-parser: 2.6.0
     dev: false
 
-  /@keystatic/core@0.5.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-5LA4AMkPgm4yBFoNSW4OaZHd3lp9iN6pSnbuWHiMwPJ4TxRCi+PkXx7n9iorA6kUsxCPpEZnx8URquu25NtV9g==}
+  /@keystatic/core@0.5.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-JpqBYxtBwiCqH23M2Bg0Bg9it/aOJ/9+gmZHIOqIteiv/xx64lXfLxTIJ3n6syFaJrJ9tjX1+uWetqRiJYbQaw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1090,7 +1090,7 @@ packages:
       '@floating-ui/react': 0.24.8(react-dom@18.2.0)(react@18.2.0)
       '@internationalized/string': 3.2.1
       '@keystar/ui': 0.7.1(react-dom@18.2.0)(react@18.2.0)
-      '@markdoc/markdoc': 0.3.5(@types/react@18.2.65)(react@18.2.0)
+      '@markdoc/markdoc': 0.4.0(@types/react@18.2.65)(react@18.2.0)
       '@react-aria/focus': 3.16.2(react@18.2.0)
       '@react-aria/i18n': 3.10.2(react@18.2.0)
       '@react-aria/interactions': 3.21.1(react@18.2.0)
@@ -1168,6 +1168,24 @@ packages:
 
   /@markdoc/markdoc@0.3.5(@types/react@18.2.65)(react@18.2.0):
     resolution: {integrity: sha512-Z3agu2wnodoOYd5kzKbtwZduSfX19Kbsg/FlK0TeMn29cTTEEVPJtjfgKSMTN/Wq+kUQXnPtOEhHRgke5d/Xiw==}
+    engines: {node: '>=14.7.0'}
+    peerDependencies:
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@types/react': 18.2.65
+      react: 18.2.0
+    optionalDependencies:
+      '@types/markdown-it': 12.2.3
+    dev: false
+
+  /@markdoc/markdoc@0.4.0(@types/react@18.2.65)(react@18.2.0):
+    resolution: {integrity: sha512-fSh4P3Y4E7oaKYc2oNzSIJVPDto7SMzAuQN1Iyx53UxzleA6QzRdNWRxmiPqtVDaDi5dELd2yICoG91csrGrAw==}
     engines: {node: '>=14.7.0'}
     peerDependencies:
       '@types/react': '*'
