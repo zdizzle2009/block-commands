@@ -1,8 +1,42 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"automerge": true,
+	"extends": ["config:recommended", "schedule:earlyMondays"],
 	"internalChecksFilter": "strict",
 	"labels": ["dependencies"],
+	"lockFileMaintenance": {
+		"enabled": true
+	},
+	"rebaseWhen": "conflicted",
+	"baseBranches": ["main"],
+	"packageRules": [
+		{
+			"description": "Automatically merge minor and patch-level updates",
+			"matchUpdateTypes": ["minor", "patch", "digest"],
+			"automerge": true,
+			"automergeType": "branch"
+		},
+		{
+			"groupName": "astro",
+			"matchPackagePatterns": ["astro", "@astrojs*"]
+		},
+		{
+			"groupName": "keystatic",
+			"matchPackagePatterns": ["@keystatic*"]
+		},
+		{
+			"groupName": "react",
+			"matchPackageNames": ["react", "react-dom"]
+		}
+	],
 	"postUpdateOptions": ["pnpmDedupe"],
-	"stabilityDays": 3
+	"prConcurrentLimit": 0,
+	"prHourlyLimit": 3,
+	"rangeStrategy": "replace",
+	"schedule": ["before 7am on Monday"],
+	"separateMajorMinor": true,
+	"separateMinorPatch": false,
+	"stabilityDays": 3,
+	"timezone": "Australia/Sydney",
+	"updateNotScheduled": false
 }
