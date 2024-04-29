@@ -3496,8 +3496,8 @@ packages:
     peerDependencies:
       zod: ^3.22.4
 
-  zod@3.22.5:
-    resolution: {integrity: sha512-HqnGsCdVZ2xc0qWPLdO25WnseXThh0kEYKIdV5F/hTHO75hNZFp8thxSeHhiPrHZKrFTo1SOgkAj9po5bexZlw==}
+  zod@3.23.4:
+    resolution: {integrity: sha512-/AtWOKbBgjzEYYQRNfoGKHObgfAZag6qUJX1VbHo2PRBgS+wfWagEY2mizjfyAPcGesrJOcx/wcl0L9WnVrHFw==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -3533,7 +3533,7 @@ snapshots:
       gray-matter: 4.0.3
       htmlparser2: 9.1.0
       kleur: 4.1.5
-      zod: 3.22.5
+      zod: 3.23.4
     transitivePeerDependencies:
       - '@types/react'
       - react
@@ -3621,7 +3621,7 @@ snapshots:
     dependencies:
       sitemap: 7.1.1
       stream-replace-string: 2.0.0
-      zod: 3.22.5
+      zod: 3.23.4
 
   '@astrojs/tailwind@5.1.0(astro@4.6.3(@types/node@17.0.45)(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
@@ -4285,7 +4285,7 @@ snapshots:
       y-prosemirror: 1.2.3(prosemirror-model@1.20.0)(prosemirror-state@1.4.3)(prosemirror-view@1.33.4)(y-protocols@1.0.6(yjs@13.6.14))(yjs@13.6.14)
       y-protocols: 1.0.6(yjs@13.6.14)
       yjs: 13.6.14
-      zod: 3.22.5
+      zod: 3.23.4
     transitivePeerDependencies:
       - next
       - supports-color
@@ -5544,8 +5544,8 @@ snapshots:
       vitefu: 0.2.5(vite@5.2.10(@types/node@17.0.45))
       which-pm: 2.1.1
       yargs-parser: 21.1.1
-      zod: 3.22.5
-      zod-to-json-schema: 3.22.5(zod@3.22.5)
+      zod: 3.23.4
+      zod-to-json-schema: 3.22.5(zod@3.23.4)
     optionalDependencies:
       sharp: 0.32.6
     transitivePeerDependencies:
@@ -7914,10 +7914,10 @@ snapshots:
 
   yocto-queue@1.0.0: {}
 
-  zod-to-json-schema@3.22.5(zod@3.22.5):
+  zod-to-json-schema@3.22.5(zod@3.23.4):
     dependencies:
-      zod: 3.22.5
+      zod: 3.23.4
 
-  zod@3.22.5: {}
+  zod@3.23.4: {}
 
   zwitch@2.0.4: {}
