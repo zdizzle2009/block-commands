@@ -28,7 +28,7 @@
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
 		"astro": "^4.5.5",
-		"date-fns": "^3.5.0",
+		"date-fns": "^4.0.0",
 		"prettier": "^3.0.3",
 		"prettier-plugin-astro": "^0.14.0",
 		"prettier-plugin-curly": "^0.2.1",
