@@ -31,7 +31,7 @@
 		"date-fns": "^4.0.0",
 		"prettier": "^3.0.3",
 		"prettier-plugin-astro": "^0.14.0",
-		"prettier-plugin-curly": "^0.2.1",
+		"prettier-plugin-curly": "^0.3.0",
 		"prettier-plugin-packagejson": "^2.4.12",
 		"prettier-plugin-tailwindcss": "^0.6.0",
 		"react": "^18.2.0",
