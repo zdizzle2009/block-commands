@@ -10,7 +10,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	site: 'https://block-commands.netlify.app',
 	integrations: [keystatic(), markdoc(), react(), sitemap(), tailwind()],
-	output: 'hybrid',
+	output: 'static',
 	adapter: netlify({
 		edgeMiddleware: true,
 	}),

@@ -1,14 +1,14 @@
 ---
-import { Post } from "../../components/post";
-import { reader } from "../../keystatic/reader";
-import Layout from "../../components/layout.astro";
+import Layout from '../../components/layout.astro';
+import { Post } from '../../components/post';
+import { reader } from '../../keystatic/reader';
 
-const post = await reader.collections.videos.read(Astro.params.slug ?? '');
+const post = await reader.collections.videos.read(Astro.params.slug);
 
 if (!post) {
 	return new Response(null, {
 		status: 404,
-		statusText: 'Not found'
+		statusText: 'Not found',
 	});
 }
 

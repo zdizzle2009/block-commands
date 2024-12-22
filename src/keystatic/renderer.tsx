@@ -1,11 +1,11 @@
-import type { InferRenderersForComponentBlocks } from '@keystatic/core';
+import { type InferRenderersForComponentBlocks } from '@keystatic/core';
 import {
 	DocumentRenderer as KeystaticDocumentRenderer,
 	type DocumentRendererProps,
 } from '@keystatic/core/renderer';
 
 import { CloudImage } from '../components/cloud-image';
-import type { componentBlocks } from './component-blocks';
+import { type componentBlocks } from './component-blocks';
 
 export function DocumentRenderer(props: DocumentRendererProps) {
 	return (

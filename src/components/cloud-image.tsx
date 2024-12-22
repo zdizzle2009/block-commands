@@ -114,8 +114,8 @@ export function CloudImage({
 		<img
 			{...consumerProps}
 			alt={alt}
-			decoding={decoding ?? priority ? 'async' : 'auto'}
-			loading={loading ?? priority ? 'eager' : 'lazy'}
+			decoding={(decoding ?? priority) ? 'async' : 'auto'}
+			loading={(loading ?? priority) ? 'eager' : 'lazy'}
 			role={alt ? undefined : 'presentation'}
 			sizes={`(min-width: ${maxWidth}px) ${maxWidth}px, 100vw`}
 			src={`${src}?width=${Math.min(width ?? 0, maxWidth)}&height=${

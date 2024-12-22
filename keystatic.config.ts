@@ -14,7 +14,7 @@ export default config({
 		facts: collection({
 			label: 'Facts',
 			slugField: 'title',
-			path: 'src/content/facts/*',
+			path: 'content/facts/*',
 			format: { contentField: 'content' },
 			schema: {
 				title: fields.slug({
@@ -48,7 +48,7 @@ export default config({
 		tutorials: collection({
 			label: 'Tutorials',
 			slugField: 'title',
-			path: 'src/content/tutorials/*',
+			path: 'content/tutorials/*',
 			format: { contentField: 'content' },
 			schema: {
 				title: fields.slug({
@@ -82,7 +82,7 @@ export default config({
 		videos: collection({
 			label: 'Videos',
 			slugField: 'title',
-			path: 'src/content/videos/*',
+			path: 'content/videos/*',
 			format: { contentField: 'content' },
 			schema: {
 				title: fields.slug({

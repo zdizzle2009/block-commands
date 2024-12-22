@@ -2,7 +2,7 @@
 import '@fontsource/press-start-2p';
 import '../styles/global.css';
 
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 import { AUTHOR_NAME, SITE_DESCRIPTION, SITE_TITLE } from '../config';
 import HeaderLink from './header-link.astro';
@@ -43,7 +43,7 @@ const {
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		<meta property="twitter:image" content={new URL(image, Astro.url)} />
-		<ViewTransitions />
+		<ClientRouter />
 	</head>
 
 	<body>

@@ -1,4 +1,8 @@
-module.exports = {
+import { config as defaultConfig } from '@epic-web/config/prettier';
+
+/** @type {import("prettier").Options} */
+export default {
+	...defaultConfig,
 	endOfLine: 'lf',
 	importOrder: ['<THIRD_PARTY_MODULES>', '', '^~/(.*)$', '', '^[./]'],
 	importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
@@ -28,8 +32,5 @@ module.exports = {
 		'prettier-plugin-astro',
 		'prettier-plugin-tailwindcss',
 	],
-	proseWrap: 'always',
-	singleQuote: true,
-	tabWidth: 2,
-	useTabs: true,
+	semi: true,
 };
