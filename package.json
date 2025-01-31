@@ -50,7 +50,7 @@
 		"prettier-plugin-curly": "^0.3.1",
 		"prettier-plugin-packagejson": "^2.5.6",
 		"prettier-plugin-tailwindcss": "^0.6.9",
-		"react-compiler-runtime": "19.0.0-beta-201e55d-20241215",
+		"react-compiler-runtime": "19.0.0-beta-27714ef-20250124",
 		"typescript": "^5.7.2"
 	},
 	"packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf",
