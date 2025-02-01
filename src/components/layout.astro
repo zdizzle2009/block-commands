@@ -47,17 +47,17 @@ const {
 	</head>
 
 	<body>
-		<header class="border-t-8 border-green-light px-4 text-green-light">
+		<header class="border-green-light text-green-light border-t-8 px-4">
 			<div class="mx-auto w-full max-w-3xl pt-24">
 				<a
 					href="/"
-					class="text-center font-display text-5xl uppercase leading-[1.25]"
+					class="font-display text-center text-5xl leading-[1.25] uppercase"
 				>
 					<h2>{SITE_TITLE}</h2>
 				</a>
-				<div class="pb-12 pt-8">
+				<div class="pt-8 pb-12">
 					<div
-						class="flex flex-wrap items-center justify-between border-b-8 border-green-light text-lg"
+						class="border-green-light flex flex-wrap items-center justify-between border-b-8 text-lg"
 					>
 						<nav class="flex flex-wrap">
 							<HeaderLink href="/facts">Facts</HeaderLink>
@@ -73,14 +73,14 @@ const {
 		</header>
 
 		<main class="px-4">
-			<div class="prose mx-auto w-full max-w-3xl bg-green-light px-4 py-12">
+			<div class="prose bg-green-light mx-auto w-full max-w-3xl px-4 py-12">
 				<slot />
 			</div>
 		</main>
 
 		<footer class="mt-auto pt-4">
 			<div
-				class="mx-auto flex w-full max-w-3xl flex-wrap items-center justify-between bg-black bg-opacity-50 p-4 text-white"
+				class="mx-auto flex w-full max-w-3xl flex-wrap items-center justify-between bg-black/50 p-4 text-white"
 			>
 				<span>
 					<a href="#TOP" class="text-white hover:text-gray-300">Back to top ^</a
