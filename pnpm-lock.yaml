@@ -106,8 +106,8 @@ importers:
         specifier: ^0.6.11
         version: 0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.3))(prettier-plugin-astro@0.14.1)(prettier@3.5.3)
       react-compiler-runtime:
-        specifier: 19.0.0-beta-201e55d-20241215
-        version: 19.0.0-beta-201e55d-20241215(react@19.0.0)
+        specifier: 19.0.0-beta-e552027-20250112
+        version: 19.0.0-beta-e552027-20250112(react@19.0.0)
       typescript:
         specifier: ^5.7.2
         version: 5.8.2
@@ -3697,10 +3697,10 @@ packages:
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
-  react-compiler-runtime@19.0.0-beta-201e55d-20241215:
-    resolution: {integrity: sha512-jBEo/UqVgiz6veJjhQMoNaGQLKUQwzMQpiYrA4XsGVOC2sElDF0oMjic5107LitP988yHrqDDZwZirS4OAEqyA==}
+  react-compiler-runtime@19.0.0-beta-e552027-20250112:
+    resolution: {integrity: sha512-GEeaCTe9UsEbNop0f6EAljFd82PvB3YCiZZPrxP0LbG0DVA5K4mOJ2D0zRpkxad/rCsT1SUo1KjBHSorRIdQug==}
     peerDependencies:
-      react: ^17.0.0 || ^18.0.0 || ^19.0.0
+      react: ^17.0.0 || ^18.0.0 || ^19.0.0 || ^0.0.0-experimental
 
   react-dom@19.0.0:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
@@ -9396,7 +9396,7 @@ snapshots:
 
   radix3@1.1.2: {}
 
-  react-compiler-runtime@19.0.0-beta-201e55d-20241215(react@19.0.0):
+  react-compiler-runtime@19.0.0-beta-e552027-20250112(react@19.0.0):
     dependencies:
       react: 19.0.0
 
