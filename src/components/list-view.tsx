@@ -27,7 +27,7 @@ export function ListView({ posts }: ListViewProps) {
 			<tbody>
 				{posts.map((post) => (
 					<tr key={post.slug} className="border-b border-gray-200">
-						<td className="whitespace-nowrap p-2">
+						<td className="p-2 whitespace-nowrap">
 							<time dateTime={post.entry.pubDate}>
 								{new Date(post.entry.pubDate).toLocaleDateString('en-AU', {
 									year: 'numeric',
@@ -39,7 +39,7 @@ export function ListView({ posts }: ListViewProps) {
 						<td className="w-full p-2">
 							<a href={post.href}>{post.entry.title}</a>
 						</td>
-						<td className="whitespace-nowrap p-2">
+						<td className="p-2 whitespace-nowrap">
 							<a href={`/${post.category}`} className="ml-auto">
 								#{post.category}
 							</a>
