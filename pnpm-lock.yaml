@@ -1160,8 +1160,8 @@ packages:
     resolution: {integrity: sha512-5qnHsri4X5r2spdD2tvdbU78grFV4fq7uVh/rMXF19qlgcHiuo0yr1JBEim1oINs/w+pyjusXMfnFEZjvV2qlQ==}
     engines: {node: '>=20.6.1'}
 
-  '@netlify/serverless-functions-api@2.6.0':
-    resolution: {integrity: sha512-/m4HO0MNb7nBsHWKQ7JTeTZ3jDZpfQxs0LOn9h/+aPzGcdYW7DwKNudGq8NXYY5NPtRE3C+8qtr3xLfN9VOU6g==}
+  '@netlify/serverless-functions-api@2.7.0':
+    resolution: {integrity: sha512-W4cA+26Ew2aiHjraIFult4FclnBbs/LtvJXHn3+EI/QeeuB2VIhS9fOgJdrO4goNr7mXj+Fur6v033MCCqNmeQ==}
     engines: {node: '>=18.0.0'}
 
   '@netlify/static@3.1.0':
@@ -1172,14 +1172,14 @@ packages:
     resolution: {integrity: sha512-ktUb5d58pt1lQGXO5E9S0F1ljM0g+CoQuGTVII0IxBc0apmPq5RI0o3OWLY7U3ZERRiYTg5UfjiMihBEzuZsuw==}
     engines: {node: ^18.14.0 || >=20}
 
-  '@netlify/vite-plugin@2.7.2':
-    resolution: {integrity: sha512-YP9oEsKQXFZZgouoGMqSXYqqXOW8nwnI77hWL3ANDpN9/g0+vj3LvBU8gKJcOreuE8ZSQoCwsg5KsDRAitO9uw==}
+  '@netlify/vite-plugin@2.7.3':
+    resolution: {integrity: sha512-MtuCoUJQ/INiQsscaF/q9UOJYE2Lxn2b222YX24DeEWyxJTNnhetXHUK1WGtnsUCLZmKG4dd7P0ThyW4HBLV8Q==}
     engines: {node: ^20.6.1 || >=22}
     peerDependencies:
       vite: ^5 || ^6 || ^7
 
-  '@netlify/zip-it-and-ship-it@14.1.9':
-    resolution: {integrity: sha512-3f3b7wq1A/tg7WUH4Rxiulfn1KkCZ9LuORwsMb2lL/ZhI6X8sHsLW6xzBw846xb/fEa+MrYxvLV+zTxs/9s9sg==}
+  '@netlify/zip-it-and-ship-it@14.1.10':
+    resolution: {integrity: sha512-4zLknf28ScL7UQrsWd0JnQazfLkf+ah6ihZoQb77nMZwOBou9b4topqUsAvc0y2ADjqe9As308fB4FcRHM6J8g==}
     engines: {node: '>=18.14.0'}
     hasBin: true
 
@@ -6281,7 +6281,7 @@ snapshots:
       '@astrojs/underscore-redirects': 1.0.0
       '@netlify/blobs': 10.1.0
       '@netlify/functions': 4.3.0(rollup@4.52.4)
-      '@netlify/vite-plugin': 2.7.2(babel-plugin-macros@3.1.0)(idb-keyval@6.2.2)(rollup@4.52.4)(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.1)(yaml@2.8.1))
+      '@netlify/vite-plugin': 2.7.3(babel-plugin-macros@3.1.0)(idb-keyval@6.2.2)(rollup@4.52.4)(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.1)(yaml@2.8.1))
       '@vercel/nft': 0.30.1(rollup@4.52.4)
       astro: 5.14.5(@netlify/blobs@10.1.0)(@types/node@24.8.1)(idb-keyval@6.2.2)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.8.1)
       esbuild: 0.25.11
@@ -7469,7 +7469,7 @@ snapshots:
       '@netlify/blobs': 10.1.0
       '@netlify/dev-utils': 4.3.0
       '@netlify/functions': 5.0.0
-      '@netlify/zip-it-and-ship-it': 14.1.9(rollup@4.52.4)
+      '@netlify/zip-it-and-ship-it': 14.1.10(rollup@4.52.4)
       cron-parser: 4.9.0
       decache: 4.6.2
       extract-zip: 2.0.1
@@ -7491,7 +7491,7 @@ snapshots:
       '@netlify/blobs': 10.1.0
       '@netlify/dev-utils': 4.3.0
       '@netlify/types': 2.1.0
-      '@netlify/zip-it-and-ship-it': 14.1.9(rollup@4.52.4)
+      '@netlify/zip-it-and-ship-it': 14.1.10(rollup@4.52.4)
       cron-parser: 4.9.0
       decache: 4.6.2
       extract-zip: 2.0.1
@@ -7574,7 +7574,7 @@ snapshots:
       '@netlify/runtime-utils': 2.2.0
       '@netlify/types': 2.1.0
 
-  '@netlify/serverless-functions-api@2.6.0': {}
+  '@netlify/serverless-functions-api@2.7.0': {}
 
   '@netlify/static@3.1.0':
     dependencies:
@@ -7582,7 +7582,7 @@ snapshots:
 
   '@netlify/types@2.1.0': {}
 
-  '@netlify/vite-plugin@2.7.2(babel-plugin-macros@3.1.0)(idb-keyval@6.2.2)(rollup@4.52.4)(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.1)(yaml@2.8.1))':
+  '@netlify/vite-plugin@2.7.3(babel-plugin-macros@3.1.0)(idb-keyval@6.2.2)(rollup@4.52.4)(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.1)(yaml@2.8.1))':
     dependencies:
       '@netlify/dev': 4.6.2(idb-keyval@6.2.2)(rollup@4.52.4)
       '@netlify/dev-utils': 4.3.0
@@ -7614,12 +7614,12 @@ snapshots:
       - supports-color
       - uploadthing
 
-  '@netlify/zip-it-and-ship-it@14.1.9(rollup@4.52.4)':
+  '@netlify/zip-it-and-ship-it@14.1.10(rollup@4.52.4)':
     dependencies:
       '@babel/parser': 7.28.4
       '@babel/types': 7.28.4
       '@netlify/binary-info': 1.0.0
-      '@netlify/serverless-functions-api': 2.6.0
+      '@netlify/serverless-functions-api': 2.7.0
       '@vercel/nft': 0.29.4(rollup@4.52.4)
       archiver: 7.0.1
       common-path-prefix: 3.0.0
