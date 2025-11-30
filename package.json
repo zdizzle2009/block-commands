@@ -48,7 +48,7 @@
 		"globals": "^16.4.0",
 		"prettier": "^3.6.2",
 		"prettier-plugin-astro": "^0.14.1",
-		"prettier-plugin-curly": "^0.3.2",
+		"prettier-plugin-curly": "^0.4.0",
 		"prettier-plugin-packagejson": "^2.5.19",
 		"prettier-plugin-tailwindcss": "^0.6.14",
 		"react-compiler-runtime": "19.0.0-beta-ebf51a3-20250411",
