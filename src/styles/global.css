@@ -7,7 +7,7 @@
 	--font-display: 'Press Start 2P', var(--font-sans);
 }
 
-@plugin "@tailwindcss/typography";
+@plugin '@tailwindcss/typography';
 
 @layer typography {
 	.prose h1 {
