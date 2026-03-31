@@ -43,7 +43,7 @@
 		"oxfmt": "^0.36.0",
 		"oxlint": "^1.51.0",
 		"react-compiler-runtime": "19.0.0-beta-ebf51a3-20250411",
-		"typescript": "^5.9.3"
+		"typescript": "^6.0.0"
 	},
 	"engines": {
 		"node": ">=22"
