@@ -1,5 +1,4 @@
 import { collection, config, fields } from '@keystatic/core';
-
 import { componentBlocks } from './src/keystatic/component-blocks';
 
 const isDev = process.env.NODE_ENV === 'development';

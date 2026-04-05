@@ -4,7 +4,7 @@
 	--color-green-light: oklch(93.18% 0.029 145.34);
 	--color-green-dark: oklch(49.97% 0.0903 147.12);
 
-	--font-display: 'Press Start 2P', var(--font-sans);
+	--font-display: var(--font-press-start-2p), var(--font-sans);
 }
 
 @plugin '@tailwindcss/typography';

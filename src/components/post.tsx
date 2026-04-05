@@ -1,6 +1,5 @@
 import { type DocumentElement } from '@keystatic/core';
 import { Fragment } from 'react';
-
 import { DocumentRenderer } from '../keystatic/renderer';
 import { toHumanReadableDate, toIsoString } from '../lib/utils/date-helpers';
 

@@ -1,11 +1,9 @@
 ---
-import '@fontsource/press-start-2p';
-import '../styles/global.css';
-
-import { ClientRouter } from 'astro:transitions';
-
-import { AUTHOR_NAME, SITE_DESCRIPTION, SITE_TITLE } from '../config';
-import HeaderLink from './header-link.astro';
+import "../styles/global.css";
+import { Font } from "astro:assets";
+import { ClientRouter } from "astro:transitions";
+import { AUTHOR_NAME, SITE_DESCRIPTION, SITE_TITLE } from "../config";
+import HeaderLink from "./header-link.astro";
 
 type Props = {
 	description?: string;
@@ -15,7 +13,7 @@ type Props = {
 
 const {
 	description = SITE_DESCRIPTION,
-	image = '/placeholder-social.jpg',
+	image = "/placeholder-social.jpg",
 	title = SITE_TITLE,
 } = Astro.props;
 ---
@@ -25,6 +23,7 @@ const {
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<Font cssVariable="--font-press-start-2p" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 
@@ -86,7 +85,7 @@ const {
 					<a href="#TOP" class="text-white hover:text-gray-300">Back to top ^</a
 					>
 				</span>
-				<span>&copy; {new Date().getFullYear()}{' '}{AUTHOR_NAME}</span>
+				<span>&copy; {new Date().getFullYear()}{" "}{AUTHOR_NAME}</span>
 			</div>
 		</footer>
 	</body>

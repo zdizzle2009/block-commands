@@ -15,17 +15,24 @@
 	"singleQuote": true,
 	"sortImports": {
 		"groups": [
-			["builtin", "external"],
-			"internal",
-			["parent", "sibling", "index"],
+			["side_effect_style", "side_effect"],
+			["builtin", "external", "type-builtin", "type-external"],
+			["subpath", "internal", "type-subpath", "type-internal"],
+			[
+				"parent",
+				"sibling",
+				"index",
+				"type-parent",
+				"type-sibling",
+				"type-index"
+			],
 			"unknown"
 		],
-		"internalPattern": ["~/"],
-		"newlinesBetween": true,
-		"order": "asc",
-		"partitionByNewline": false
+		"ignoreCase": false,
+		"newlinesBetween": false,
+		"sortSideEffects": true
 	},
-	"sortPackageJson": {},
+	"sortPackageJson": true,
 	"sortTailwindcss": {
 		"functions": ["clsx", "cn", "cva"],
 		"attributes": ["class", "className"]

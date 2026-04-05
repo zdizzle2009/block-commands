@@ -3,7 +3,6 @@ import { type APIRoute } from 'astro';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import invariant from 'tiny-invariant';
-
 import { SITE_DESCRIPTION, SITE_TITLE } from '../config';
 import { DocumentRenderer } from '../keystatic/renderer';
 import { getSortedEntries } from '../lib/get-sorted-entries';
