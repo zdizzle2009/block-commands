@@ -17,7 +17,7 @@
 		"start": "npx serve ./dist"
 	},
 	"dependencies": {
-		"@astrojs/check": "0.9.8",
+		"@astrojs/check": "0.9.9",
 		"@astrojs/markdoc": "^1.0.3",
 		"@astrojs/netlify": "^7.0.6",
 		"@astrojs/react": "^5.0.2",
