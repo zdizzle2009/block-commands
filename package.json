@@ -39,7 +39,7 @@
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"globals": "^17.4.0",
-		"oxfmt": "^0.43.0",
+		"oxfmt": "^0.52.0",
 		"oxlint": "^1.58.0",
 		"react-compiler-runtime": "19.0.0-beta-ebf51a3-20250411",
 		"typescript": "^6.0.2"
