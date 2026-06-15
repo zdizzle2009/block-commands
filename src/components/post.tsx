@@ -1,10 +1,10 @@
-import { type DocumentElement } from '@keystatic/core';
+import type { DocumentElement } from '@keystatic/core';
 import { Fragment } from 'react';
 import { DocumentRenderer } from '../keystatic/renderer';
 import { toHumanReadableDate, toIsoString } from '../lib/utils/date-helpers';
 
 type PostProps = {
-	document: DocumentElement[];
+	document: Array<DocumentElement>;
 	post: {
 		title: string;
 		description: string;
@@ -17,7 +17,7 @@ export function Post({ document, post }: PostProps) {
 		<Fragment>
 			<h1>{post.title}</h1>
 			{post.pubDate ? (
-				<time dateTime={toIsoString(post.pubDate)} className="sr-only">
+				<time className="sr-only" dateTime={toIsoString(post.pubDate)}>
 					{toHumanReadableDate(post.pubDate)}
 				</time>
 			) : null}

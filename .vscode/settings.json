@@ -3,8 +3,9 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll.oxc": "always"
 	},
+	"prettier.documentSelectors": ["**/*.astro"],
 	"[astro]": {
-		"editor.defaultFormatter": "astro-build.astro-vscode",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
 		"editor.insertSpaces": false,
 		"editor.tabSize": 2,

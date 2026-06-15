@@ -28,7 +28,7 @@ export async function getSortedEntries() {
 
 type BaseEntry = { entry: { pubDate: string } };
 
-export function sortEntries<Entry extends BaseEntry>(entries: Entry[]) {
+export function sortEntries<Entry extends BaseEntry>(entries: Array<Entry>) {
 	return entries.sort(
 		(a, b) =>
 			new Date(b.entry.pubDate).valueOf() - new Date(a.entry.pubDate).valueOf(),

@@ -24,7 +24,7 @@ type CloudImageProps = Omit<
 	 * The breakpoints at which to generate images.
 	 * @default [148, 296, 444, 592, 740]
 	 */
-	breakpoints?: number[];
+	breakpoints?: Array<number>;
 
 	/**
 	 * Hint for browser image decoding.
@@ -38,7 +38,7 @@ type CloudImageProps = Omit<
 	 * The densities at which to generate images.
 	 * @default [1, 1.5, 2]
 	 */
-	densities?: number[];
+	densities?: Array<number>;
 
 	/**
 	 * How the image should be resized to fit its container.
@@ -154,8 +154,8 @@ function generateSrcSet({
 	src,
 	width,
 }: Pick<CloudImageProps, 'fit' | 'height' | 'src' | 'width'> & {
-	breakpoints: number[];
-	densities: number[];
+	breakpoints: Array<number>;
+	densities: Array<number>;
 }) {
 	if (!width || !height) {
 		return '';
