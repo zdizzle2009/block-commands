@@ -1,113 +1,37 @@
 {
-	"$schema": "./node_modules/oxlint/configuration_schema.json",
-	"categories": { "correctness": "off" },
-	"env": { "browser": true, "builtin": true, "node": true },
-	"globals": {
-		"AudioWorkletGlobalScope": "readonly",
-		"AudioWorkletProcessor": "readonly",
-		"currentFrame": "readonly",
-		"currentTime": "readonly",
-		"registerProcessor": "readonly",
-		"sampleRate": "readonly",
-		"WorkletGlobalScope": "readonly"
-	},
-	"ignorePatterns": [
-		"**/.cache/**",
-		"**/.react-router/**",
-		"**/.wrangler/**",
-		"**/*.json",
-		"**/*.tsbuildinfo",
-		"**/build/**",
-		"**/coverage/**",
-		"**/dist/**",
-		"**/node_modules/**",
-		"**/playwright-report/**",
-		"**/public/**",
-		"**/server-build/**",
-		"**/worker-configuration.d.ts"
-	],
-	"plugins": ["import"],
-	"rules": {
-		"import/no-duplicates": ["warn", { "prefer-inline": true }],
-		"no-unexpected-multiline": "error",
-		"no-warning-comments": [
-			"error",
-			{ "terms": ["FIXME"], "location": "anywhere" }
-		]
-	},
-	"overrides": [
-		{
-			"files": ["**/*.js?(x)"],
-			"rules": {
-				"no-unused-vars": [
-					"warn",
-					{
-						"args": "after-used",
-						"argsIgnorePattern": "^_",
-						"ignoreRestSiblings": true,
-						"varsIgnorePattern": "^ignored"
-					}
-				]
-			}
-		},
-		{
-			"files": ["**/*.ts?(x)", "**/*.js?(x)"],
-			"rules": {
-				"no-restricted-imports": [
-					"error",
-					{
-						"patterns": [
-							{
-								"group": [
-									"**/__tests__/**/*",
-									"**/*.spec.*",
-									"**/*.test.*",
-									"**/#tests/**",
-									"**/tests/**"
-								],
-								"message": "Do not import test files in source files"
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"files": ["**/*.ts?(x)", "**/*.js?(x)"],
-			"rules": {
-				"react-hooks/rules-of-hooks": "error",
-				"react-hooks/exhaustive-deps": "warn"
-			},
-			"plugins": ["react"]
-		},
-		{
-			"files": ["**/*.ts?(x)"],
-			"rules": {
-				"@typescript-eslint/consistent-type-imports": [
-					"warn",
-					{
-						"prefer": "type-imports",
-						"disallowTypeAnnotations": true,
-						"fixStyle": "inline-type-imports"
-					}
-				],
-				"import/consistent-type-specifier-style": ["warn", "prefer-inline"],
-				"no-unused-vars": [
-					"warn",
-					{
-						"args": "after-used",
-						"argsIgnorePattern": "^_",
-						"ignoreRestSiblings": true,
-						"varsIgnorePattern": "^ignored"
-					}
-				]
-			},
-			"plugins": ["typescript"]
-		},
-		{
-			"files": ["**/*.tsx", "**/*.jsx"],
-			"rules": { "react/jsx-key": "warn" },
-			"plugins": ["react"]
-		}
-	]
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": { "correctness": "error", "perf": "error" },
+  "options": {
+    "maxWarnings": 0,
+    "reportUnusedDisableDirectives": "allow",
+    "typeAware": false,
+    "typeCheck": false
+  },
+  "plugins": ["import", "jsdoc", "node", "oxc", "promise", "typescript", "unicorn", "vitest"],
+  "rules": {
+    "curly": "off",
+    "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
+    "import/no-duplicates": "error",
+    "jsdoc/check-access": "error",
+    "jsdoc/check-property-names": "error",
+    "jsdoc/check-tag-names": "error",
+    "jsdoc/empty-tags": "error",
+    "no-console": "warn",
+    "no-unused-vars": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": ["error", { "VariableDeclarator": { "array": false, "object": true } }],
+    "sort-imports": "off",
+    "typescript/array-type": ["error", { "default": "generic" }],
+    "typescript/await-thenable": "error",
+    "typescript/consistent-indexed-object-style": ["error", "record"],
+    "typescript/consistent-type-exports": ["error", { "fixMixedExportsWithInlineTypeSpecifier": false }],
+    "typescript/consistent-type-imports": ["error", { "fixStyle": "separate-type-imports", "prefer": "type-imports" }],
+    "typescript/no-floating-promises": "error",
+    "typescript/no-for-in-array": "error",
+    "typescript/no-misused-promises": ["error", { "checksVoidReturn": { "attributes": false } }],
+    "typescript/no-misused-spread": "off",
+    "typescript/no-non-null-assertion": "error",
+    "typescript/triple-slash-reference": "off",
+    "unicode-bom": ["error", "never"]
+  }
 }

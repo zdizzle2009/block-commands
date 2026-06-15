@@ -6,13 +6,10 @@ import { sortEntries } from '../../lib/get-sorted-entries';
 
 const videos = await reader.collections.videos.all();
 
-const posts = sortEntries([
-	...videos.map((tutorial) => ({
-		...tutorial,
-		category: 'videos',
-		href: `/videos/${tutorial.slug}`,
-	})),
-]);
+const posts = sortEntries(videos.map((tutorial) => (Object.assign(tutorial, {
+	category: 'videos',
+	href: `/videos/${tutorial.slug}`
+}))));
 ---
 
 <Layout title="Videos">

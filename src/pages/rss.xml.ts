@@ -1,4 +1,5 @@
-import rss, { type RSSFeedItem } from '@astrojs/rss';
+import rss from '@astrojs/rss';
+import type { RSSFeedItem } from '@astrojs/rss';
 import type { APIRoute } from 'astro';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';

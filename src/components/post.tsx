@@ -17,7 +17,10 @@ export function Post({ document, post }: PostProps) {
 		<Fragment>
 			<h1>{post.title}</h1>
 			{post.pubDate ? (
-				<time className="sr-only" dateTime={toIsoString(post.pubDate)}>
+				<time
+					className="sr-only"
+					dateTime={toIsoString(post.pubDate)}
+				>
 					{toHumanReadableDate(post.pubDate)}
 				</time>
 			) : null}

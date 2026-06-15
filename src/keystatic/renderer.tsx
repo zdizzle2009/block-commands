@@ -1,8 +1,6 @@
 import type { InferRenderersForComponentBlocks } from '@keystatic/core';
-import {
-	type DocumentRendererProps,
-	DocumentRenderer as KeystaticDocumentRenderer,
-} from '@keystatic/core/renderer';
+import type { DocumentRendererProps } from '@keystatic/core/renderer';
+import { DocumentRenderer as KeystaticDocumentRenderer } from '@keystatic/core/renderer';
 import { CloudImage } from '../components/cloud-image';
 import type { componentBlocks } from './component-blocks';
 

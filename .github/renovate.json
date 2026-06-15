@@ -1,51 +1,42 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"baseBranches": ["main"],
-	"extends": ["config:recommended"],
-	"internalChecksFilter": "strict",
-	"labels": ["dependencies"],
-	"lockFileMaintenance": {
-		"enabled": true,
-		"schedule": [
-			"before 7am on the first day of the month in March, June, September, and December"
-		]
-	},
-	"minimumReleaseAge": "7 days",
-	"packageRules": [
-		{
-			"automerge": true,
-			"automergeType": "branch",
-			"description": "Group all non-major updates into a single PR and automerge",
-			"groupName": "non-major dependencies",
-			"matchUpdateTypes": ["minor", "patch", "pin", "digest"]
-		},
-		{
-			"groupName": "astro",
-			"matchPackageNames": ["astro", "@astrojs/**"]
-		},
-		{
-			"groupName": "keystatic",
-			"matchPackageNames": ["@keystatic/**"]
-		},
-		{
-			"groupName": "react",
-			"matchPackageNames": [
-				"react",
-				"react-dom",
-				"@types/react",
-				"@types/react-dom"
-			]
-		}
-	],
-	"postUpdateOptions": ["pnpmDedupe"],
-	"prConcurrentLimit": 5,
-	"prHourlyLimit": 0,
-	"rangeStrategy": "replace",
-	"rebaseWhen": "conflicted",
-	"schedule": [
-		"before 7am on the first day of the month in March, June, September, and December"
-	],
-	"separateMajorMinor": true,
-	"separateMinorPatch": false,
-	"timezone": "Australia/Sydney"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": ["main"],
+  "extends": ["config:recommended"],
+  "internalChecksFilter": "strict",
+  "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 7am on the first day of the month in March, June, September, and December"]
+  },
+  "minimumReleaseAge": "7 days",
+  "packageRules": [
+    {
+      "automerge": true,
+      "automergeType": "branch",
+      "description": "Group all non-major updates into a single PR and automerge",
+      "groupName": "non-major dependencies",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    },
+    {
+      "groupName": "astro",
+      "matchPackageNames": ["astro", "@astrojs/**"]
+    },
+    {
+      "groupName": "keystatic",
+      "matchPackageNames": ["@keystatic/**"]
+    },
+    {
+      "groupName": "react",
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"]
+    }
+  ],
+  "postUpdateOptions": ["pnpmDedupe"],
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 0,
+  "rangeStrategy": "replace",
+  "rebaseWhen": "conflicted",
+  "schedule": ["before 7am on the first day of the month in March, June, September, and December"],
+  "separateMajorMinor": true,
+  "separateMinorPatch": false,
+  "timezone": "Australia/Sydney"
 }

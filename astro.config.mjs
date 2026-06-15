@@ -23,10 +23,7 @@ export default defineConfig({
 	}),
 	vite: {
 		optimizeDeps: {
-			exclude: [
-				'@keystatic/astro',
-				'@keystatic/astro/internal/keystatic-api.js',
-			],
+			exclude: ['@keystatic/astro', '@keystatic/astro/internal/keystatic-api.js'],
 		},
 		plugins: [tailwindcss()],
 	},
