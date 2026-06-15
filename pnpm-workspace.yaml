@@ -1,3 +1,5 @@
-# Security: Wait 2 days (2880 minutes) before installing newly released packages
-# This helps protect against compromised packages that are often discovered and removed quickly
-minimumReleaseAge: 2880
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+  sharp: true
+minimumReleaseAge: 2880 # Security: Wait 2 days (2880 minutes) before installing newly released packages
