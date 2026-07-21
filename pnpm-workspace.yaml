@@ -3,3 +3,6 @@ allowBuilds:
   esbuild: false
   sharp: true
 minimumReleaseAge: 2880 # Security: Wait 2 days (2880 minutes) before installing newly released packages
+minimumReleaseAgeExclude:
+  # Renovate security update: astro@7.1.0
+  - astro@7.1.0
