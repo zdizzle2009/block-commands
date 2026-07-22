@@ -8,3 +8,5 @@ minimumReleaseAgeExclude:
   - astro@7.1.0
   # Renovate security update: @astrojs/netlify@8.1.2
   - "@astrojs/netlify@8.1.2"
+  # Renovate security update: @astrojs/rss@4.0.19
+  - "@astrojs/rss@4.0.19"
